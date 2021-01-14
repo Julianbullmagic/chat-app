@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
 const config = require("./config/key");
+//hello
 
 // const mongoose = require("mongoose");
 // mongoose
@@ -43,7 +44,7 @@ app.use('/uploads', express.static('uploads'));
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
 
-  // Set static folder   
+  // Set static folder
   // All the javascript and css files will be read and served from this folder
   app.use(express.static("client/build"));
 
